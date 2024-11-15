@@ -1,4 +1,4 @@
-package extentReportsManager;
+package ReportsManager;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
