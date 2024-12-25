@@ -12,6 +12,13 @@ public class HomePageObjects {
 	private By register = By.xpath("//a[text()='Register']");
 	private By login = By.xpath("//a[text()='Login']");
 
+	// add To Cart TestCases
+	private By search = By.xpath("//input[@placeholder='Search']");
+	private By searchClick = By.xpath("//button[@class='btn btn-default btn-lg']");
+	private By searchClear = By.xpath("//input[@placeholder='Search']");
+	
+	
+
 	public HomePageObjects(WebDriver driver) { // Constructor
 		this.driver = driver;// We have assigned the scope
 
@@ -29,4 +36,17 @@ public class HomePageObjects {
 		return driver.findElement(login);
 	}
 
+	// add To Cart TestCases
+	public WebElement Search() {
+		return driver.findElement(search);
+	}
+
+	public WebElement clickOnsearch() {
+		return driver.findElement(searchClick);
+	}
+	
+	public WebElement Clearsearch() {
+		return driver.findElement(searchClear);
+	}
+	
 }

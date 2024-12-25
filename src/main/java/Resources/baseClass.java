@@ -2,7 +2,6 @@ package Resources;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -67,7 +66,7 @@ public class baseClass {
 
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "/ScreenShots" + filename + "_" + date + ".png";
-		try {                                                                 // VerifyRresgiertaionWithValiData_20241107080800.png
+		try { // VerifyRresgiertaionWithValiData_20241107080800.png
 			FileUtils.copyFile(source, new File(destination));
 		} catch (Exception e) {
 			e.getMessage();
